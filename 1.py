@@ -1,10 +1,10 @@
 class door():
     def __init__(self, color, height, weight, length):
-        self.__color = color
-        self.__height = height
-        self.__weight = weight
-        self.__length = length
-        self.__poloz = False
+        self.color = color
+        self.height = height
+        self.weight = weight
+        self.length = length
+        self.poloz = False
     def start(self):
         self.poloz = True
         print('Дверь открыта')
@@ -12,16 +12,7 @@ class door():
     def stop(self):
         self.poloz = False
         print('Дверь закрыта')
-
-
-    def public(self):
-        pass
-
-    def _private(self):
-        pass
-
-    def __protected(self):
-        pass
+        
 
 tree = door('brown', 129, 18, 437)
 tree.start()
